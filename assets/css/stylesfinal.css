@@ -272,6 +272,9 @@ img {
   --first-color-dark: hsl(42, 85%, 50%);
   --first-color-light: hsl(42, 100%, 83%);
 }
+.color:hover {
+  cursor: pointer;
+}
 /*=============== HEADER & NAV ===============*/
 .header {
   background-color: var(--body-color);
@@ -723,6 +726,9 @@ img {
 .footer_social_link:hover {
   color: var(--first-color);
 }
+.contact_button {
+  cursor: pointer;
+}
 /*-------BreakPoints-----------*/
 @media screen and (max-width: 1200px) {
   .container {
@@ -799,9 +805,18 @@ img {
     translate: -50%;
     transform: translateY(-50px);
   }
+  .about_img_wrapper:hover .about_img {
+    transform: translateY(-50px);
+  }
   .skills_description {
     font-size: calc(var(--large-font-size) - 3px);
     width: 150px;
+  }
+
+  .work_img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -873,6 +888,9 @@ img {
   .contact_container {
     grid-template-columns: 1fr;
   }
+  .work_container {
+    gap: 100px;
+  }
   .skills_description {
     font-size: var(--larger-font-size);
     width: 350px;
@@ -883,6 +901,10 @@ img {
   .footer_container {
     flex-direction: column;
     row-gap: 1rem;
+  }
+  .work_description {
+    width: 325px;
+    padding-bottom: 70px;
   }
 }
 @media screen and (max-width: 480px) {

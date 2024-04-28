@@ -41,7 +41,7 @@
   --title-color: hsl(247, 27%, 31%);
   --text-color: hsl(0, 0%, 18%);
   --body-color: hsl(0, 5%, 81%);
-  --container-color: hsl(0, 0%, 83%);
+  --container-color: hsl(0, 0%, 73%);
   --border-color: hsl(0, 0%, 87%);
   --card-container-color: rgb(147, 144, 144);
   --card-container-color-opacity: rgba(0, 0, 0, 0.05);
@@ -359,9 +359,11 @@ img {
   transition: all 0.3s ease;
 }
 /* Active link */
-.active_link,
-.nav_link:hover {
+.active_link {
   color: var(--first-color);
+}
+.nav_link:hover {
+  color: var(--first-color-dark);
 }
 .nav_toggler {
   display: none;
@@ -560,6 +562,10 @@ img {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  transition: all 0.2s ease;
+}
+.skill_item:hover {
+  scale: 1.05;
 }
 .skills_description {
   font-size: var(--large-font-size);
